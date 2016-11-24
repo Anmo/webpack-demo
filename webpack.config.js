@@ -46,6 +46,9 @@ switch(process.env.npm_lifecycle_event) {
 					path: PATHS.build,
 					filename: '[name].[chunkhash].js',
 
+					// Tweak this to match your GitHub project name
+					publicPath: '/webpack-demo/'
+
 					// This is used for require.ensure. The setup
 					// will work without but this is useful to set.
 					chunkFilename: '[chunkhash].js'
